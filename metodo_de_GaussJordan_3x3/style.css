@@ -1,0 +1,121 @@
+:root{
+    --morado: rgb(53, 100, 255);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(111, 144, 253), rgb(96, 128, 235));
+}
+
+h1{
+    color: #fff;
+    margin: 20px 0;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+
+.container{
+    background-color: #fefefe;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    width: 500px;
+    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 1fr 3fr;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.linea{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputNumeros{
+    width: 35px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: .3s ease all;
+    font-size: 17px;
+}
+
+#resultado1{
+    margin-left: 20px;
+}
+
+#resultado2{
+    margin-left: 20px;
+}
+
+#resultado3{
+    margin-left: 20px;
+}
+
+.container-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonCalcular{
+    width: 105px;
+    height: 42px;
+    margin: 20px 0px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: .3s ease all;
+    border: 2px solid var(--morado);
+}
+
+#botonCalcular:hover{
+    background-color: var(--morado);
+    color: #fff;
+}
+
+.inputNumeros:focus{
+    border-color: var(--morado);
+}
+
+#resultado1:focus {
+    border-color: #f00;
+}
+
+#resultado2:focus {
+    border-color: #f00;
+}
+
+#resultado3:focus {
+    border-color: #f00;
+}
+
+.container-respuestas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resultadoFinal{
+    margin-left: 40px;
+}

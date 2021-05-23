@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Ecuaciones 2x2</title>
+</head>
+<body>
+    <h1>Ecuaciones 2x2</h1>
+    <div class="container">
+        <div class="linea">
+            <span class="contenedorInput">X1<input type="number" step="any" class="inputNumero" id="x1"></span>
+            <span class="contenedorInput">Y1<input type="number" step="any" class="inputNumero" id="y1"></span>
+            <span class="contenedorInput" id="span-resultado">=<input type="number" step="any" class="inputNumero" id="resultado1"></span>
+        </div>
+        <div class="linea">
+            <span class="contenedorInput">X2<input type="number" step="any" class="inputNumero" id="x2"></span>
+            <span class="contenedorInput">Y2<input type="number" step="any" class="inputNumero" id="y2"></span>
+            <span class="contenedorInput" id="span-resultado">=<input type="number" step="any" class="inputNumero" id="resultado2"></span>
+        </div>
+        <div class="container-boton">
+            <button id="botonCalcular">Calcular</button>
+        </div>
+        <div class="container-respuestas">
+            <div>X es igual a: <span id="resultadoX"></span></div>
+            <div>Y es igual a: <span id="resultadoY"></span></div>
+        </div>
+        <div class="container-boton-mostrarMas" id="container-boton-mostrarMas">
+            <button id="botonMostrarMas">Mostrar pasos<i id="iconoMostrarMas"class="fas fa-chevron-down"></i></button>
+        </div>
+    </div>
+    <div id="contenedorPasos">
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

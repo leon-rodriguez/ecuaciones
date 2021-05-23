@@ -1,0 +1,172 @@
+:root{
+    --morado: rgb(53, 100, 255);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(111, 144, 253), rgb(96, 128, 235));
+
+    /* background-image: url(patron_matematica.jpg); */ 
+}
+
+h1{
+    color: #fff;
+    margin: 20px 0;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 3fr 3fr 1fr 3fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #fefefe;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.inputNumero{
+    width: 35px;
+    height: 25px;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: .3s ease all;
+    font-size: 17px;
+}
+
+.inputNumero:focus{
+    border-color: var(--morado);
+}
+
+#resultado1:focus{
+    border-color: #f00;
+}
+
+#resultado2:focus{
+    border-color: #f00;
+}
+
+#span-resultado{
+    font-size: 19px;
+}
+
+.linea{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#resultado1{
+    margin-left: 25px;
+}
+
+#resultado2{
+    margin-left: 25px;
+}
+
+.container-boton{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#botonCalcular{
+    width: 95px;
+    height: 35px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: .3s ease all;
+    border: 2px solid var(--morado);
+}
+
+#botonCalcular:hover{
+    background-color: var(--morado);
+    color: #fff;
+}
+
+.container-respuestas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 70px;
+}
+
+.container-boton-mostrarMas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonMostrarMas{
+    width: 150px;
+    height: 43px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--morado);
+    transition: .3s ease all;
+    font-size: 15px;
+    padding: 2px;
+    display: none;
+}
+
+#botonMostrarMas:hover{
+    background-color: var(--morado);
+    color: #fff;
+}
+
+
+#iconoMostrarMas{
+    font-size: 15px;
+    display: block;
+}
+
+#contenedorPasos{
+    width: 500px;
+    min-height: 0px;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    /* transition: 2s ease-in all; */
+    /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5); */
+    /* padding: 20px;
+    padding-bottom: 30px; */
+}
+
+/* .contenido-pasos{
+    margin: 15px;
+}
+ */
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}

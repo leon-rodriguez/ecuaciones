@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ecuaciones 3x3</title>
+</head>
+<body>
+    <h1>Ecuaciones 3x3</h1>
+    <div class="container">
+        <div class="linea" id="linea1">
+            <div><span>X1</span><input type="text" class="inputNumeros" id="x1"></div>
+            <div><span>Y1</span><input type="text" class="inputNumeros" id="y1"></div>
+            <div><span>Z1</span><input type="text" class="inputNumeros" id="z1"></div>
+            <div><span>=</span><input type="text" class="inputNumeros" id="resultado1"></div>
+        </div>
+        <div class="linea" id="linea2">
+                <div><span>X2</span><input type="text" class="inputNumeros" id="x2"></div>
+                <div><span>Y2</span><input type="text" class="inputNumeros" id="y2"></div>
+                <div><span>Z2</span><input type="text" class="inputNumeros" id="z2"></div>
+                <div><span>=</span><input type="text" class="inputNumeros" id="resultado2"></div>
+        </div>
+        <div class="linea" id="linea3">
+                <div><span>X3</span><input type="text" class="inputNumeros" id="x3"></div>
+                <div><span>Y3</span><input type="text" class="inputNumeros" id="y3"></div>
+                <div><span>Z3</span><input type="text" class="inputNumeros" id="z3"></div>
+                <div><span>=</span><input type="text" class="inputNumeros" id="resultado3"></div>
+        </div>
+        <div class="container-boton">
+            <button id="botonCalcular">Calcular</button>
+        </div>
+        <div class="container-respuestas">
+            <div class="resultadoFinal">X es igual a: <span id="resultadoX"></span></div>
+            <div class="resultadoFinal">Y es igual a: <span id="resultadoY"></span></div>
+            <div class="resultadoFinal">Z es igual a: <span id="resultadoZ"></span></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
