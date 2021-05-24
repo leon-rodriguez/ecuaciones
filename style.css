@@ -1,130 +1,138 @@
-:root{
-    --morado: rgb(53, 100, 255);
+:root {
+  --morado: rgb(53, 100, 255);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fefefe;
+body {
+  background-color: #fefefe;
 }
 
-.container{
-    width: 65%;
-    display: flex;
-    justify-content: space-between;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.container a{
-    text-decoration: none;
-    font-size: 50px;
-    padding: 10px;
-    color: var(--morado);
+.container a {
+  text-decoration: none;
+  font-size: 50px;
+  padding: 10px;
+  color: var(--morado);
 }
 
-.linea{
-    content: "";
-    height: 0px;
-    width: 0px;
-    background-color: var(--morado);
-    position: absolute;
-    transition: .5s ease all;
+.linea {
+  content: "";
+  height: 0px;
+  width: 0px;
+  background-color: var(--morado);
+  position: absolute;
+  transition: 0.5s ease all;
 }
 
 /*  ANIMACION PARA ECUACIONES 2X2   */
-.container2x2{
-    position: relative;
+.container2x2 {
+  position: relative;
 }
 
-
-#linea-arriba{
-    top: 0px;
-    right: 0px;
+#linea-arriba {
+  top: 0px;
+  right: 0px;
 }
 
-#linea-derecha{
-    top: 0px;
-    right: 0px;
+#linea-derecha {
+  top: 0px;
+  right: 0px;
 }
 
-#linea-abajo{
-    bottom: 0px;
-    left: 0px;
+#linea-abajo {
+  bottom: 0px;
+  left: 0px;
 }
 
-#linea-izquierda{
-    bottom: 0px;
-    left: 0px;
+#linea-izquierda {
+  bottom: 0px;
+  left: 0px;
 }
 
-.container2x2:hover #linea-abajo{
-    height: 57px;
-    width: 2px;
+.container2x2:hover #linea-abajo {
+  height: 57px;
+  width: 2px;
 }
-.container2x2:hover #linea-izquierda{
-    height: 2px;
-    width: 371.11px;
+.container2x2:hover #linea-izquierda {
+  height: 2px;
+  width: 371.11px;
 }
 
-.container2x2:hover #linea-arriba{
-    width: 2px;
-    height: 57px;
+.container2x2:hover #linea-arriba {
+  width: 2px;
+  height: 57px;
 }
-.container2x2:hover #linea-derecha{
-    width: 371.11px;
-    height: 2px;
+.container2x2:hover #linea-derecha {
+  width: 371.11px;
+  height: 2px;
 }
 
 /*  ANIMACION PARA ECUACIONES 2X2   */
 
-.container3x3{
-    position: relative;
+.container3x3 {
+  position: relative;
 }
 
-#linea-arriba2{
-    top: 0px;
-    right: 0px;
+#linea-arriba2 {
+  top: 0px;
+  right: 0px;
 }
 
-#linea-derecha2{
-    top: 0px;
-    right: 0px;
+#linea-derecha2 {
+  top: 0px;
+  right: 0px;
 }
 
-#linea-abajo2{
-    bottom: 0px;
-    left: 0px;
+#linea-abajo2 {
+  bottom: 0px;
+  left: 0px;
 }
 
-#linea-izquierda2{
-    bottom: 0px;
-    left: 0px;
+#linea-izquierda2 {
+  bottom: 0px;
+  left: 0px;
 }
 
-.container3x3:hover #linea-abajo2{
-    height: 57px;
-    width: 2px;
+.container3x3:hover #linea-abajo2 {
+  height: 57px;
+  width: 2px;
 }
-.container3x3:hover #linea-izquierda2{
-    height: 2px;
-    width: 371.11px;
-}
-
-.container3x3:hover #linea-arriba2{
-    height: 57px;
-    width: 2px;
-}
-.container3x3:hover #linea-derecha2{
-    height: 2px;
-    width: 371.11px;
+.container3x3:hover #linea-izquierda2 {
+  height: 2px;
+  width: 371.11px;
 }
 
+.container3x3:hover #linea-arriba2 {
+  height: 57px;
+  width: 2px;
+}
+.container3x3:hover #linea-derecha2 {
+  height: 2px;
+  width: 371.11px;
+}
+
+.version {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #777;
+}
+
+@media only screen and (max-width: 810px) {
+  .container {
+    flex-direction: column;
+  }
+}
