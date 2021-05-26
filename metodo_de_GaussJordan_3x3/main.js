@@ -14,7 +14,13 @@ const calcular = document.getElementById("botonCalcular");
 let resultadoFinalX = document.getElementById("resultadoX");
 let resultadoFinalY = document.getElementById("resultadoY");
 let resultadoFinalZ = document.getElementById("resultadoZ");
+let btnAbrirPopup = document.getElementById("container-reglas");
+let overlay = document.getElementById("overlay");
+let popup = document.getElementById("popup");
+let btnCerrarPopup = document.getElementById("btn-cerrar-popup");
 
+btnAbrirPopup.addEventListener("click", mostrarPopup);
+btnCerrarPopup.addEventListener("click", cerrarPopup);
 calcular.addEventListener("click", calcular3x3);
 
 
@@ -128,3 +134,14 @@ function calcular3x3(){
 } 
 
 
+function mostrarPopup(){
+    overlay.classList.add("active");
+    popup.classList.add("active");
+    console.log("mostrar pop up")
+}
+
+function cerrarPopup(){
+    overlay.classList.remove("active");
+    popup.classList.remove("active");
+    console.log("cerrar pop up")
+} 

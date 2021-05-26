@@ -1,13 +1,17 @@
 const boton = document.getElementById("botonCalcular");
 let botonMostrarMas = document.getElementById("botonMostrarMas");
-let contenedorBotonMostrarMas = document.getElementById(
-  "container-boton-mostrarMas"
-);
+let contenedorBotonMostrarMas = document.getElementById("container-boton-mostrarMas");
 let contenedorPasos = document.getElementById("contenedorPasos");
+let btnAbrirPopup = document.getElementById("container-reglas");
+let overlay = document.getElementById("overlay");
+let popup = document.getElementById("popup");
+let btnCerrarPopup = document.getElementById("btn-cerrar-popup");
 
 const resultadoX = document.getElementById("resultadoX");
 const resultadoY = document.getElementById("resultadoY");
 
+btnAbrirPopup.addEventListener("click", mostrarPopup);
+btnCerrarPopup.addEventListener("click", cerrarPopup);
 boton.addEventListener("click", calcular);
 
 function calcular() {
@@ -83,4 +87,16 @@ function estilosPasos() {
   contenedorPasos.style.boxShadow = "3px 3px 3px 3px rgba(0, 0, 0, .5)";
   contenedorPasos.style.padding = "20px";
   contenedorPasos.style.paddingBottom = "30px";
+}
+
+function mostrarPopup(){
+  overlay.classList.add("active");
+  popup.classList.add("active");
+  console.log("mostrar pop up")
+}
+
+function cerrarPopup(){
+  overlay.classList.remove("active");
+  popup.classList.remove("active");
+  console.log("cerrar pop up")
 }

@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css">
     <title>Ecuaciones 3x3</title>
 </head>
 <body>
-    <h1>Ecuaciones 3x3</h1>
+    <nav>
+        <div class="container-menu">
+            <a href="../metodo_de_gauss_2x2/index.html" class="nav-option">Ecuaciones 2x2</a>
+            <a href="./index.html" class="nav-option">Ecuaciones 3x3</a>
+        <div class="linea-nav"></div>
+        </div>
+    </nav>
+    <div class="container-all">
+        <h1>Ecuaciones 3x3</h1>
     <div class="container">
+        <div class="llave">{</div>
+        <div class="container-reglas" id="container-reglas">
+            <i class="fas fa-exclamation-triangle" id="icono-reglas"></i>
+            <span>Consejos</span>
+        </div>
         <div class="linea" id="linea1">
             <div><span>X1</span><input type="text" class="inputNumeros" id="x1"></div>
             <div><span>Y1</span><input type="text" class="inputNumeros" id="y1"></div>
@@ -38,6 +57,17 @@
             <div class="resultadoFinal">Y es igual a: <span id="resultadoY"></span></div>
             <div class="resultadoFinal">Z es igual a: <span id="resultadoZ"></span></div>
         </div>
+    </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" class="btn-cerrar-popup"><i class="fas fa-times" id="btn-cerrar-popup"></i></a>
+            <h2>Reglas de uso</h2>
+        <ul>
+            <li class="reglas-items"><h4>Numeros negativos:</h4><span>Para poner un numero negativo, se debe colocar el signo - adelante de dicho numero. Ejemplo: 4 negativo se espresaría -4</span></li>
+            <li class="reglas-items"><h4>Fracciones:</h4><span>Para expresar fracciones debe colocarse el signo / para señalar la division. Ejemplo: 3 cuartos se expresaría 3/4. En el caso de poner un numero con coma, debe ponerse el numero en cuestion con un punto en vez de una coma</span></li>
+        </ul>
+        </div> 
     </div>
     <script src="./main.js"></script>
 </body>
